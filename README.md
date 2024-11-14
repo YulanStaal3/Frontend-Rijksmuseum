@@ -56,7 +56,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  - Je kunt niet goed door de site heen navigeren met bijvoorbeeld je toetsenbord.
+  - Geen goede hierarchie H1, h2 etc...
+  - Niet overal gebruik gemaakt van goede alt teksen.
+  - Werkt wel als je met je muis navigeert.
 
 </details>
 
