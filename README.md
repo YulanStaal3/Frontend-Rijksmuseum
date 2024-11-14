@@ -56,6 +56,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
+  Ik ben door de Moco site gegaan en heb de screenreader hierop getest. Ik heb verschillende dingen getest. Zo heb ik gekeken wat er zou gebeuren als ik de voice over gewoon zou laten voorlezen, ook heb ik geprobeerd om met mijn toetsenbord te navigeren en ook met behulp van mijn muis. Ik ben tot de volgende bevindingen gekomen:
+
   - Je kunt niet goed door de site heen navigeren met bijvoorbeeld je toetsenbord.
   - Geen goede hierarchie H1, h2 etc...
   - Niet overal gebruik gemaakt van goede alt teksen.
