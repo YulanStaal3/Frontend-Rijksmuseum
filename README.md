@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  https://mocomuseum.com/nl
+ https://www.rijksmuseum.nl/nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina
-  <img src="readme-images/Home-Moco.PNG" width="375px" alt="Home pagina">
+  <img src="readme-images/Rijks-Home.PNG" width="375px" alt="Home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Ontdek pagina
-  <img src="readme-images/Ontdek-Moco.PNG" width="375px" alt="Ontdek pagina">
+  Ontdek Nachtwacht pagina
+  <img src="readme-images/Rijks-ontdek.PNG" width="375px" alt="Ontdek pagina">
  
 </details>
 
@@ -56,12 +56,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Ik ben door de Moco site gegaan en heb de screenreader hierop getest. Ik heb verschillende dingen getest. Zo heb ik gekeken wat er zou gebeuren als ik de voice over gewoon zou laten voorlezen, ook heb ik geprobeerd om met mijn toetsenbord te navigeren en ook met behulp van mijn muis. Ik ben tot de volgende bevindingen gekomen:
+  Ik ben door de Rijksmuseum site gegaan en heb de screenreader hierop getest. Ik heb verschillende dingen getest. Zo heb ik gekeken wat er zou gebeuren als ik de voice over gewoon zou laten voorlezen, ook heb ik geprobeerd om met mijn toetsenbord te navigeren en ook met behulp van mijn muis. Ik ben tot de volgende bevindingen gekomen:
 
-  - Je kunt niet goed door de site heen navigeren met bijvoorbeeld je toetsenbord.
-  - Geen goede hierarchie H1, h2 etc...
-  - Niet overal gebruik gemaakt van goede alt teksen.
-  - Werkt wel als je met je muis navigeert.
+  - Je kunt door de site heen scrollen door gebruik te maken van de spatie knop.
+  - Met de tab kun je door de website navigeren, dit werkt niet overal even goed.
+  - Goede hieracrhie van h1, h2 etc..
+  - Niet overal gebruik gemaakt van goede alt teksten bij images.
+  - Werkt goed als je met je muis navigeert.
 
 </details>
 
