@@ -30,7 +30,17 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: auto;
 	position: absolute;
+	top: 2%;
+	left: 5%;
+	right: 5%;
+}
+
+header button {
+	display: flex;
+	align-items: center;
+
 }
 
 nav.toonMenu {
@@ -71,7 +81,7 @@ header button:nth-of-type(2) {
 header button:nth-of-type(2) span {
 	display: block;
 	width: 2em;
-	height: 0.25em;
+	height: 0.2em;
 	background-color: var(--color-text);
 	border-radius: 0.2em;
 	transition: all 0.3s ease-in-out;
@@ -86,7 +96,9 @@ header nav {
 	height: 100%;
 	background-color: var(--nav-background-color);
 	padding: 2em;
-	transition: all 0.3s ease-in-out;
+
+	/* KIJKEN */
+	transition: transform .2s ease-out, opacity 0ms linear .2s;
 	z-index: 10;
 }
   
@@ -120,8 +132,10 @@ header li {
 h1 {
 	font-family: rijksbold;
 	text-align: center;
-	font-size: 80vw;
+	width: 100%;
+	font-size: 14vw;
 	text-transform: uppercase;
+	color: var(--color-text);
 }
 
 @media (width > 50em) {
@@ -138,7 +152,7 @@ header div {
 }
 	
 	main h1 {
-		/* position:relative; */
+		position:relative;
 		z-index:1;
 	}
 }
@@ -148,11 +162,44 @@ button img {
 }
 
 section {
-	/* position: relative; */
+	position: relative;
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
+	min-height: 100vh;
 }
+
+main p {
+	background: #fff;
+    border-radius: 1px;
+    color: #000000;
+    display: inline-block;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: .75rem;
+    padding: 3px 4px;
+    text-transform: uppercase;
+	z-index: 1;
+	padding: 1em;
+	display: flex;
+	position: absolute;
+	left: 5%;
+}
+
+section h2 {
+	display: flex;
+	position: absolute;
+	left: 5%;
+	color: var(--color-text);
+}
+
+section h3 {
+	display: flex;
+	position: absolute;
+	left: 5%;
+	color: var(--color-text);
+}
+
 
 main img {
 	position: absolute;
@@ -164,12 +211,4 @@ main img {
 	z-index: -1;
 }
 
-section h1,
-section p,
-section h2,
-section h3 {
-	z-index: 1;
-	color: var(--color-text);
-	padding: 1em;
-}
 
