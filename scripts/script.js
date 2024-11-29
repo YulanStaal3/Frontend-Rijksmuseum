@@ -1,35 +1,15 @@
 // JavaScript Document
 console.log("hi");
 
-const menuButton = document.querySelector ("header > button");
-const deNav = document.querySelector ("nav");
+// Selecteer de tweede button (hamburgerbutton) en de nav
+const hamburgerButton = document.querySelector("header button:nth-of-type(2)");
+const navMenu = document.querySelector("header nav");
 
-// stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
-menuButton.onclick = toggleMenu; 
+// Voeg een kliklistener toe aan de hamburgerbutton
+hamburgerButton.addEventListener("click", () => {
+  // Toggle de "toonMenu" class op de nav
+  navMenu.classList.toggle("toonMenu");
 
-// stap 3: voeg in de functie een class toe aan de nav
-function toggleMenu () {
-  deNav.classList.add("toonMenu");
-}
-
-
-
-
-/************************************/
-/* menu sluiten met de sluit button */
-/************************************/
-
-/* JOUW CODE HIER - stap 5 */
-
-// stap 1 - zoek sluiten button op
-
-const sluitButton = document.querySelector("nav button");
-
-// stap 2 - laat die button luisteren naar kliks
-sluitButton.onclick = sluitMenu;
-
-// stap 3 - in de functie verwijder de class van de nav
-
-function sluitMenu() {
-  deNav.classList.remove("toonMenu")
-}
+  // Toggle de "open" class op de hamburgerbutton
+  hamburgerButton.classList.toggle("open");
+});
