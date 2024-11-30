@@ -219,6 +219,107 @@ section img {
 	z-index: -1;
 }
 
+/* footer */
 
+/* Algemene footerstijl */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Links uitlijnen */
+    background-color: #000; /* Zwarte achtergrond */
+    color: #fff; /* Witte tekst */
+    padding: 2rem; /* Binnenruimte */
+    gap: 1rem; /* Ruimte tussen secties */
+}
 
+footer h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Lijst voor links onder elkaar */
+footer ul:first-of-type {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul:first-of-type li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul:first-of-type li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+footer ul:first-of-type li a:hover {
+    text-decoration: underline;
+}
+
+/* Knoppen voor donatie en nieuwsbrief */
+footer button {
+    background-color: #d55140;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 1rem; /* Ruimte tussen de knoppen */
+}
+
+footer button:hover {
+    background-color: #fff;
+    color: #d55140;
+    border: 1px solid #d55140;
+}
+
+/* Logo's */
+footer img {
+    height: 50px;
+    width: auto;
+    margin-right: 1rem; /* Ruimte tussen logo's */
+}
+
+/* Horizontale lijst voor voorwaarden */
+footer ul:last-of-type {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem; /* Ruimte tussen de items */
+}
+
+footer ul:last-of-type li {
+    position: relative;
+}
+
+footer ul:last-of-type li::after {
+    content: "|";
+    color: #fff;
+    margin-left: 0.5rem;
+}
+
+footer ul:last-of-type li:last-child::after {
+    content: ""; /* Geen separator na de laatste link */
+}
+
+footer ul:last-of-type li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+footer ul:last-of-type li a:hover {
+    text-decoration: underline;
+}
 
