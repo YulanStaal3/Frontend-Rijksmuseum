@@ -27,14 +27,14 @@ body {
 }
 
 header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: auto;
-	position: absolute;
-	top: 2%;
-	left: 5%;
-	right: 5%;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem; 
+    position: absolute;
+    top: 2%; 
+    left: 5%;
+    right: 5%;
 }
 
 header button {
@@ -43,29 +43,18 @@ header button {
 
 }
 
+header img{
+	width: 1.3em;
+}
+
 nav.toonMenu {
 	translate: 0;
 }
 
-  /* rode knop */
+  /* hamburger */
 header button:nth-of-type(1) {
 	display: flex;
-	background-color: var(--button-background-color);
-	border: none;
-	color: var(--color-text);
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 1em;
-	border-radius: 0.2em;
-	padding: .94em .63em;
-	cursor: pointer;
-	order: 1;
-}
-
-  /* hamburger */
-header button:nth-of-type(2) {
-	display: flex;
+	flex-direction: column;
 	z-index: 20;
 	width: 3em;
 	height: 3em;
@@ -73,12 +62,11 @@ header button:nth-of-type(2) {
 	border: none;
 	cursor: pointer;
 	display: flex;
-	flex-direction: column;
 	justify-content: space-around;
-	align-items: center;
+	cursor: pointer;
 }
   
-header button:nth-of-type(2) span {
+header button:nth-of-type(1) span {
 	display: block;
 	width: 2em;
 	height: 0.2em;
@@ -108,16 +96,31 @@ header nav {
 }
   
 /* Hamburger wordt kruisje */
-header button:nth-of-type(2).open span:nth-of-type(1) {
+header button:nth-of-type(1).open span:nth-of-type(1) {
 	transform: translateY(0.8em) rotate(45deg);
 }
   
-header button:nth-of-type(2).open span:nth-of-type(2) {
+header button:nth-of-type(1).open span:nth-of-type(2) {
 	opacity: 0;
 }
   
-header button:nth-of-type(2).open span:nth-of-type(3) {
+header button:nth-of-type(1).open span:nth-of-type(3) {
 	transform: translateY(-0.8em) rotate(-45deg);
+}
+
+  /* rode knop */
+  header button:nth-of-type(2) {
+	display: flex;
+	background-color: var(--button-background-color);
+	border: none;
+	color: var(--color-text);
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1em;
+	border-radius: 0.2em;
+	padding: .94em .63em;
+	cursor: pointer;
 }
 
 header a {
@@ -130,12 +133,16 @@ header li {
 }
 
 h1 {
+	position: absolute;
+	top: 3%;
 	font-family: rijksbold;
 	text-align: center;
 	width: 100%;
+	left: 50%;
 	font-size: 14vw;
 	text-transform: uppercase;
 	color: var(--color-text);
+	transform: translateX(-50%); /* Correcte centrering */
 }
 
 @media (width > 50em) {
@@ -150,11 +157,6 @@ header div {
 		position:relative;
 		z-index:1;
 }
-	
-	main h1 {
-		position:relative;
-		z-index:1;
-	}
 }
 
 button img {
@@ -162,46 +164,50 @@ button img {
 }
 
 section {
-	position: relative;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	min-height: 100vh;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    padding: 2rem; 
+    overflow: hidden;
 }
 
-main p {
-	background: #fff;
-    border-radius: 1px;
+section p, section h2, section h3 {
+    color: var(--color-text);
+}
+
+section p {
+    background: var(--color-text);
+	border-radius: 1px;
     color: #000000;
-    display: inline-block;
-    font-size: .75rem;
-    font-weight: 700;
-    line-height: .75rem;
-    padding: 3px 4px;
+	display: inline-block;
+    font-size: 0.75rem;
+	font-weight: 600;
+	line-height: .75rem;
     text-transform: uppercase;
-	z-index: 1;
-	padding: 1em;
-	display: flex;
-	position: absolute;
-	left: 5%;
+    padding: .2rem .2rem;
+    margin-bottom: .5rem; 
+    align-self: flex-start; 
+    z-index: 1;
 }
 
 section h2 {
-	display: flex;
-	position: absolute;
+	font-size: 2rem;
 	left: 5%;
 	color: var(--color-text);
+	align-self: flex-start;
+	z-index: 1;
 }
 
 section h3 {
-	display: flex;
-	position: absolute;
+	align-self: flex-start;
 	left: 5%;
 	color: var(--color-text);
+	font-size: 1rem;
 }
 
-
-main img {
+section img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -210,5 +216,7 @@ main img {
 	object-fit: cover;
 	z-index: -1;
 }
+
+
 
 

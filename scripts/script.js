@@ -2,7 +2,7 @@
 console.log("hi");
 
 // Selecteer de tweede button (hamburgerbutton) en de nav
-const hamburgerButton = document.querySelector("header button:nth-of-type(2)");
+const hamburgerButton = document.querySelector("header button:nth-of-type(1)");
 const navMenu = document.querySelector("header nav");
 
 // Voeg een kliklistener toe aan de hamburgerbutton
