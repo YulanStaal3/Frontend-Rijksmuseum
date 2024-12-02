@@ -6,12 +6,12 @@
 
 @font-face {
 	font-family: rijksbold;
-	src: url(/fonts/Rijksmuseum-Bold.woff2);
+	src: url("../fonts/Rijksmuseum-Bold.woff2");
 }
 
 @font-face {
 	font-family: rijksnormal;
-	src: url(/fonts/Rijksmuseum-Normal.woff2);
+	src: url("../fonts/Rijksmuseum-Normal.woff2");
 }
 
 :root {
@@ -47,36 +47,36 @@ header img{
 }
 
 
-  nav ul {
+nav ul {
 	list-style: none; 
-  }
+}
   
-  nav ul:first-of-type {
+nav ul:first-of-type {
 	display: flex; 
 	justify-content: flex-start; 
 	margin-top: 5em;
-  }
+}
   
-  nav ul:first-of-type li:not(:last-child)::after {
+nav ul:first-of-type li:not(:last-child)::after {
 	content: '|'; /* Voegt een scheidingsteken toe tussen items */
-	color: white;
+	color: var(--color-text);
 	margin-left: 5px; /* Ruimte tussen tekst en de | */
-  }
+}
   
-  nav ul li {
+nav ul li {
 	padding: 10px 20px; /* Binnenruimte rondom elk item */
 	text-align: left; /* Tekst links uitlijnen */
-  }
+}
   
-  nav ul li a {
-	color: white; /* Witte tekstkleur */
+ nav ul li a {
+    color: var(--color-text2); /* Witte tekstkleur */
 	text-decoration: none; /* Geen onderstreping */
 	font-size: 16px; /* Tekstgrootte */
-  }
+}
   
-  nav ul li a:hover {
+nav ul li a:hover {
 	background-color: #555; /* Verander de achtergrondkleur bij hover */
-  }
+}
   
 
 
@@ -169,6 +169,7 @@ header a {
 h1 {
 	position: absolute;
 	top: 3%;
+    font-size: calc(1rem + .125*((100vw - 20rem) / 100));
 	font-family: rijksbold;
 	text-align: center;
 	width: 100%;
@@ -347,7 +348,7 @@ footer ul:last-of-type li:last-child::after {
 }
 
 footer ul:last-of-type li a {
-    color: #fff;
+    color: var(--color-text);
     text-decoration: none;
     font-size: 0.8rem;
 }
