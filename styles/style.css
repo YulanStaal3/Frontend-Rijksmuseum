@@ -46,6 +46,43 @@ header img{
 	width: 1.3em;
 }
 
+
+  nav ul {
+	list-style: none; 
+  }
+  
+  nav ul:first-of-type {
+	display: flex; 
+	justify-content: flex-start; 
+	margin-top: 5em;
+  }
+  
+  nav ul:first-of-type li:not(:last-child)::after {
+	content: '|'; /* Voegt een scheidingsteken toe tussen items */
+	color: white;
+	margin-left: 5px; /* Ruimte tussen tekst en de | */
+  }
+  
+  nav ul li {
+	padding: 10px 20px; /* Binnenruimte rondom elk item */
+	text-align: left; /* Tekst links uitlijnen */
+  }
+  
+  nav ul li a {
+	color: white; /* Witte tekstkleur */
+	text-decoration: none; /* Geen onderstreping */
+	font-size: 16px; /* Tekstgrootte */
+  }
+  
+  nav ul li a:hover {
+	background-color: #555; /* Verander de achtergrondkleur bij hover */
+  }
+  
+
+
+
+
+
 nav.toonMenu {
 	translate: 0;
 }
@@ -81,7 +118,6 @@ header nav {
 	height: 100%;
 	background-color: var(--nav-background-color);
 	padding: 2em;
-
 	/* KIJKEN */
 	transition: transform .2s ease-out, opacity 0ms linear .2s;
 	z-index: 10;
@@ -129,9 +165,6 @@ header a {
 	text-decoration: none;
 }
 
-header li {
-	list-style: none;
-}
 
 h1 {
 	position: absolute;
@@ -323,3 +356,17 @@ footer ul:last-of-type li a:hover {
     text-decoration: underline;
 }
 
+footer ul:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-start; /* Links uitlijnen */
+    align-items: center;
+    gap: 1rem; /* Ruimte tussen de logo's */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul:nth-of-type(2) li img {
+    height: 40px; /* Pas de hoogte van de logo's aan */
+    width: auto; /* Zorg dat de proporties behouden blijven */
+}
