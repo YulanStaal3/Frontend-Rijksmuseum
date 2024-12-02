@@ -19,6 +19,7 @@
 	--color-text: #FFFFFF;
 	--button-background-color: #d55140;
 	--nav-background-color: #40474F;
+    --menu-text-color: #c2ccce;
 }
 
 body {
@@ -33,7 +34,7 @@ header {
     gap: 1rem; 
     position: absolute;
     top: 2.5%; 
-    left: 5%;
+    left: 5%;height: 1px;
     right: 5%;
 }
 
@@ -56,26 +57,31 @@ nav ul:first-of-type {
 	justify-content: flex-start; 
 	margin-top: 5em;
 }
-  
+
 nav ul:first-of-type li:not(:last-child)::after {
-	content: '|'; /* Voegt een scheidingsteken toe tussen items */
-	color: var(--color-text);
-	margin-left: 5px; /* Ruimte tussen tekst en de | */
+    content: '|';
+    color: var(--color-text);
+
 }
   
 nav ul li {
-	padding: 10px 20px; /* Binnenruimte rondom elk item */
-	text-align: left; /* Tekst links uitlijnen */
+    min-height: 2.75em;
+    margin-left: -2.1em;
 }
   
  nav ul li a {
-    color: var(--color-text2); /* Witte tekstkleur */
-	text-decoration: none; /* Geen onderstreping */
-	font-size: 16px; /* Tekstgrootte */
+    color: var(--menu-text-color); 
+	font-size: 1.2em; 
 }
   
 nav ul li a:hover {
-	background-color: #555; /* Verander de achtergrondkleur bij hover */
+    transition: transform .2s ease-out, opacity 0ms linear .2s;
+}
+
+ul > h3 {
+    min-height: 2.75em;
+    margin-left: -2.1em;
+    color: var(--color-text);
 }
   
 
@@ -167,17 +173,19 @@ header a {
 
 
 h1 {
-	position: absolute;
-	top: 3%;
-    font-size: calc(1rem + .125*((100vw - 20rem) / 100));
-	font-family: rijksbold;
-	text-align: center;
-	width: 100%;
-	left: 50%;
-	font-size: 14vw;
-	text-transform: uppercase;
-	color: var(--color-text);
-	transform: translateX(-50%); 
+position: absolute;
+top: 5.2rem;
+font-size: calc(1rem + .125*((100vw - 20rem) / 100));
+font-family: rijksbold;
+text-align: center;
+width: 100%;
+left: 50%;
+font-size: 14vw;
+text-transform: uppercase;
+color: var(--color-text);
+transform: translateX(-50%);
+margin-top: 0;
+line-height: 1;
 }
 
 @media (width > 50em) {
@@ -368,6 +376,6 @@ footer ul:nth-of-type(2) {
 }
 
 footer ul:nth-of-type(2) li img {
-    height: 40px; /* Pas de hoogte van de logo's aan */
+    height: 1em; /* Pas de hoogte van de logo's aan */
     width: auto; /* Zorg dat de proporties behouden blijven */
 }
