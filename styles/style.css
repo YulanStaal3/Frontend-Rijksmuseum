@@ -4,6 +4,16 @@
 	box-sizing: border-box;
 }
 
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;    
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
 @font-face {
 	font-family: rijksbold;
 	src: url("../fonts/Rijksmuseum-Bold.woff2");
@@ -25,6 +35,7 @@
 body {
 	font-family: rijksnormal;
 	margin: 0;
+    background-color: var(--nav-background-color);
 }
 
 header {
@@ -34,22 +45,92 @@ header {
     gap: 1rem; 
     position: absolute;
     top: 2.5%; 
-    left: 5%;height: 1px;
+    left: 5%;
+    height: 50vh;
     right: 5%;
 }
 
-header button {
-	display: flex;
-	align-items: center;
+header img {
+	width: 1.3em;
+    z-index: 30;
 }
 
-header img{
-	width: 1.3em;
+
+
+/* image openen menu rechterkant */
+header section:nth-of-type(1) img {
+    display: flex;
+    position: fixed; 
+    left: 50%; 
+    width: 50%; 
+    height: 100vh;
+    object-fit: cover;
+    z-index: 5; 
+    visibility: hidden; 
+    opacity: 0; 
+    object-position: center 1%; 
 }
+
+
+
+header section p,
+header section h2,
+header section h3 {
+    position: fixed; 
+    top: 40%; 
+    left: 55%; 
+    z-index: 10; 
+    visibility: hidden;
+    opacity: 0;
+    text-align: left;
+}
+
+
+header section p {
+    background: var(--color-text);
+	border-radius: 1px;
+    color: #000000;
+    font-size: .75rem;
+	font-weight: 600;
+	line-height: .75rem;
+    text-transform: uppercase;
+    margin-top: 1em;
+    padding: .2rem .2rem;
+	padding-top: .45em;
+    align-self: flex-start; 
+    z-index: 100;
+}
+
+header section h2 {
+	font-size: calc(1.188rem + .25*((100vw - 20rem) / 100));
+    font-weight: 700;
+    line-height: 1.263;
+    text-transform: uppercase;
+	margin-top: .25rem; 
+}
+
+header section h3 {
+	margin-top: -.5em; 
+	font-size: calc(1rem + .125*((100vw - 20rem) / 100));
+    font-weight: 100;
+    line-height: 1.375;
+}
+
+/* Zichtbaar maken wanneer het menu open is */
+header nav.toonMenu + section p,
+header nav.toonMenu + section h2,
+header nav.toonMenu + section h3 {
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
 
 
 nav ul {
 	list-style: none; 
+    padding-left: 0;
 }
   
 nav ul:first-of-type {
@@ -66,33 +147,26 @@ nav ul:first-of-type li:not(:last-child)::after {
   
 nav ul li {
     min-height: 2.75em;
-    margin-left: -2.1em;
 }
   
  nav ul li a {
     color: var(--menu-text-color); 
 	font-size: 1.2em; 
+    padding:.5em;
 }
   
 nav ul li a:hover {
-    transition: transform .2s ease-out, opacity 0ms linear .2s;
+    transition: 
+        transform .2s ease-out, 
+        opacity 0ms linear .2s;
 }
 
-ul > h3 {
+nav h3 {
     min-height: 2.75em;
-    margin-left: -2.1em;
     color: var(--color-text);
+    padding-left: 0;
 }
   
-
-
-
-
-
-nav.toonMenu {
-	translate: 0;
-}
-
   /* hamburger */
 header button:nth-of-type(1) {
 	display: flex;
@@ -118,19 +192,21 @@ header button:nth-of-type(1) span {
   /* Menu verborgen */
 header nav {
 	position: fixed;
+    overflow-y: auto;
 	top: 0;
 	left: -100%;
 	width: 100%;
 	height: 100%;
 	background-color: var(--nav-background-color);
 	padding: 2em;
+
 	/* KIJKEN */
 	transition: transform .2s ease-out, opacity 0ms linear .2s;
 	z-index: 10;
 }
   
   /* Menu uitklapppen zichtbaar */
- header nav.toonMenu {
+header nav.toonMenu {
 	left: 0;
 }
   
@@ -149,6 +225,7 @@ header button:nth-of-type(1).open span:nth-of-type(3) {
 
 /* rode knop */
 header button:nth-of-type(2) {
+    position: relative;
     align-items: center;
     background-color: var(--button-background-color);
     border-radius: 2px;
@@ -158,6 +235,7 @@ header button:nth-of-type(2) {
     font-weight: 600;
     height: 3.125rem;
     padding: 0 20px;
+    z-index: 30;
 }
 
 /* Hover-effect voor de tweede button */
@@ -171,11 +249,9 @@ header a {
 	text-decoration: none;
 }
 
-
 h1 {
 position: absolute;
 top: 5.2rem;
-font-size: calc(1rem + .125*((100vw - 20rem) / 100));
 font-family: rijksbold;
 text-align: center;
 width: 100%;
@@ -185,25 +261,7 @@ text-transform: uppercase;
 color: var(--color-text);
 transform: translateX(-50%);
 margin-top: 0;
-line-height: 1;
-}
-
-@media (width > 50em) {
-
-header nav {
-		padding-top:12em;
-		right:50%;
-		width: 50%;
-}
-	
-header div {
-		position:relative;
-		z-index:1;
-}
-}
-
-button img {
-	width: 4em;
+line-height: .8;
 }
 
 section {
@@ -215,6 +273,7 @@ section {
     padding: 2rem; 
     overflow: hidden;
 }
+
 
 section p, section h2, section h3 {
     color: var(--color-text);
@@ -250,7 +309,6 @@ section h3 {
     line-height: 1.375;
 }
 
-
 section img {
 	position: absolute;
 	top: 0;
@@ -259,6 +317,44 @@ section img {
 	height: 100%;
 	object-fit: cover;
 	z-index: -1;
+}
+
+
+@media (width > 50em) {
+
+header nav {
+    padding-top: 12em;
+    right: 50%;
+    width: 50%;
+}
+        
+header div {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    z-index: 30;
+}
+
+   /* Verberg de eerste ul in nav */
+nav ul:first-of-type {
+    display: none;
+}
+
+header nav.toonMenu + section img {
+    visibility: visible; 
+    opacity: 1; 
+    transition: ease-in .5s;
+}
+
+header nav.toonMenu + section p,
+header nav.toonMenu + section h2,
+header nav.toonMenu + section h3 {
+    visibility: visible; 
+    opacity: 1;
+}
+
 }
 
 /* footer */
