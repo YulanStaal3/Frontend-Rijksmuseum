@@ -14,28 +14,6 @@ margin-top: 0;
 line-height: .8;
 }
 
-@media (width > 50em) {
- 
-    header div {
-        position: relative;
-        z-index: 1;
-    }
-
-    h1 {
-        z-index: 30;
-    }
-
-    header nav {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr min-content min-content min-content;
-        align-content: end;
-        gap: 1em; 
-        width: 50%;
-
-        padding-left: 6vw;
-    }
-}
 
 section {
     position: relative;
