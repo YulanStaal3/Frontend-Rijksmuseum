@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Yulan Staal
 
   #### Je startniveau:
-  Blauw
+  LichtBlauw
 
   #### Je focus:
   Responsive
@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Ontdek Nachtwacht pagina
-  <img src="readme-images/Rijks-ontdek.PNG" width="375px" alt="Ontdek pagina">
+  <img src="readme-images/Rijks-ontdek.PNG" width="375px" alt="collectie pagina">
  
 </details>
 
@@ -56,13 +56,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Ik ben door de Rijksmuseum site gegaan en heb de screenreader hierop getest. Ik heb verschillende dingen getest. Zo heb ik gekeken wat er zou gebeuren als ik de voice over gewoon zou laten voorlezen, ook heb ik geprobeerd om met mijn toetsenbord te navigeren en ook met behulp van mijn muis. Ik ben tot de volgende bevindingen gekomen:
+  Ik ben door de Rijksmuseum site gegaan en heb de screenreader hierop getest. Ik heb verschillende dingen getest. Zo heb ik gekeken wat er zou gebeuren als ik de voice over gewoon     zou laten voorlezen, ook heb ik geprobeerd om met mijn toetsenbord te navigeren en ook met behulp van mijn muis. Ik ben tot de volgende bevindingen gekomen:
 
   - Je kunt door de site heen scrollen door gebruik te maken van de spatie knop.
   - Met de tab kun je door de website navigeren, dit werkt niet overal even goed.
   - Goede hieracrhie van h1, h2 etc..
   - Niet overal gebruik gemaakt van goede alt teksten bij images.
-  - Werkt goed als je met je muis navigeert.
 
 </details>
 
@@ -73,6 +72,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
+<<<<<<< HEAD
   ### de hele pagina: 
   <img src="readme-images/fed-breakdown-home-1.jpeg" width="375px" alt="breakdown van de hele pagina">
   <img src="readme-images/fed-breeakdown-home-2.jpeg" width="375px" alt="breakdown van een dynamisch deel">
@@ -82,10 +82,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Collectie pagina: 
   <img src="readme-images/Frontend-breakdownschetsen-02.png" width="375px" alt="breakdown van nog een dynamisch deel">
+=======
+  ### de hele Home pagina: 
+
+
+
+  ### Uitgeklapte menu: 
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+
+  ### Collectie pagina: 
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+>>>>>>> 7413cf000cc555aa5280299251e077fc6ce8de1d
 
 </details>
-
-
 
 
 
@@ -101,23 +110,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Kyra                     | Pleuni            | Yulan                      | Tamara        |
+  | ---                      | ---               | ---                        | ---           |
+  | Flex of grid gebruiken   | :nth-of-type      | H1 in het midden krijgen   | en dan ik dat |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik weet nu hoe ik mijn h1 in het midden krijg
+  - Gebruik maken van aria-label
+  - Font maken met @font face
 
 </details>
-
 
 
 
@@ -134,20 +139,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Pleuni                       | Kyra                   | Yulan          | Tamara           |
+  | ---                          | ---                    | ---            | ---              |
+  | Wat ipv classes gebruiken    | 3 style css bestanden  | h3 verbergen   |                  |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Visually hidden gebruiken om elemenen onzichtbaar maken --> mijn h3
+  - 3 css bestanden maken, 1 voor debasis style: root, fonts etc en 2 losse voor beide pagina's
 
 </details>
 
@@ -180,21 +181,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  
+  | Kyra           | Pleuni                    | Yulan              | Tamara           |
+  | ---            | ---                       | ---                | ---              |
+  | Grid area      | Opstelling van slider     | Light/dark mode    | Afwezig          |
+  | @media query   | Clamp font size           | Hoe werkt Grid     |                  |
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Weet nu hoe je light / dark mode toevoegt en hoe je daar buttons biij kunt maken
+  - Duidelijker hoe media query's werken
+  - Grid area in 1 regel ipv los grid-row-start grid-column-start etc. (Wel makkelijker voor mij om los uit te schrijven hihi)
 
 </details>
 

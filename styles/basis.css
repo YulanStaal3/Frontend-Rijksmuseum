@@ -44,7 +44,7 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr auto auto;
     align-items: center;
     gap: 1rem; 
     position: absolute;
@@ -59,6 +59,31 @@ header img {
     z-index: 30;
 }
 
+/* header > ul:nth-of-type(1) li a{
+    display: flex; 
+    gap: 1rem; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    align-items: center; 
+} */
+
+header > ul:nth-of-type(1) li a {
+    color: red; 
+    text-decoration: none; 
+    font-size: 0.9rem; 
+    font-weight: 600; 
+    display: flex; 
+    gap: 1rem; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    align-items: center; 
+}
+
+header > ul:nth-of-type(2) li a:hover {
+    text-decoration: underline; 
+}
 
 /* image openen menu rechterkant */
 header section:nth-of-type(1) img {
@@ -472,12 +497,11 @@ footer ul:last-of-type li a:hover {
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 3;   
+        justify-self: center; 
     }
 
     footer ul:nth-of-type(1) li a{
         font-size: 1.2rem;
-
-        justify-items: center;
     }
 
    footer button:nth-of-type(1) {
