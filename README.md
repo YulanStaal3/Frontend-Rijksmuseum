@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Yulan Staal
 
   #### Je startniveau:
-  Blauw
+  LichtBlauw
 
   #### Je focus:
   Responsive
@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Ontdek Nachtwacht pagina
-  <img src="readme-images/Rijks-ontdek.PNG" width="375px" alt="Ontdek pagina">
+  <img src="readme-images/Rijks-ontdek.PNG" width="375px" alt="collectie pagina">
  
 </details>
 
@@ -56,13 +56,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Ik ben door de Rijksmuseum site gegaan en heb de screenreader hierop getest. Ik heb verschillende dingen getest. Zo heb ik gekeken wat er zou gebeuren als ik de voice over gewoon zou laten voorlezen, ook heb ik geprobeerd om met mijn toetsenbord te navigeren en ook met behulp van mijn muis. Ik ben tot de volgende bevindingen gekomen:
+  Ik ben door de Rijksmuseum site gegaan en heb de screenreader hierop getest. Ik heb verschillende dingen getest. Zo heb ik gekeken wat er zou gebeuren als ik de voice over gewoon     zou laten voorlezen, ook heb ik geprobeerd om met mijn toetsenbord te navigeren en ook met behulp van mijn muis. Ik ben tot de volgende bevindingen gekomen:
 
   - Je kunt door de site heen scrollen door gebruik te maken van de spatie knop.
   - Met de tab kun je door de website navigeren, dit werkt niet overal even goed.
   - Goede hieracrhie van h1, h2 etc..
   - Niet overal gebruik gemaakt van goede alt teksten bij images.
-  - Werkt goed als je met je muis navigeert.
 
 </details>
 
@@ -73,18 +72,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
+  ### de hele Home pagina: ![Frontend breakdownschetsen_Tekengebied 1](https://github.com/user-attachments/assets/d4576b88-c20e-4859-b295-501c48a715f5)
+![Frontend breakdownschetsen_Tekengebied 1 2](https://github.com/user-attachments/assets/0d0da289-db6d-4c4a-a8c2-55a9e18c4d16)
+
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
+  ### Uitgeklapte menu: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
+  ### Collectie pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
-
-
 
 
 
