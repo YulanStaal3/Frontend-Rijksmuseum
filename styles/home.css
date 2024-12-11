@@ -4,16 +4,13 @@ top: 5.2rem;
 font-family: rijksbold;
 text-align: center;
 width: 100%;
-/* left: 50%; */
 left:0;
 font-size: 14vw;
 text-transform: uppercase;
 color: var(--color-text);
-/* transform: translateX(-50%); */
 margin-top: 0;
 line-height: .8;
 }
-
 
 section {
     position: relative;
