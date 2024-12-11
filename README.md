@@ -72,10 +72,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele Home pagina: ![Frontend breakdownschetsen_Tekengebied 1](https://github.com/user-attachments/assets/d4576b88-c20e-4859-b295-501c48a715f5)
-![Frontend breakdownschetsen_Tekengebied 1 2](https://github.com/user-attachments/assets/0d0da289-db6d-4c4a-a8c2-55a9e18c4d16)
+  ### de hele Home pagina: 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+
 
   ### Uitgeklapte menu: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
