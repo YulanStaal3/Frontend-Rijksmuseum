@@ -103,8 +103,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Kyra                     | Pleuni            | Yulan                      | Tamara        |
   | ---                      | ---               | ---                        | ---           |
   | Flex of grid gebruiken   | :nth-of-type      | H1 in het midden krijgen   | en dan ik dat |
-  |                          |                   |                            |               |
-  |                          |                   |                            |               |
 
 
   ### Verslag van meeting
@@ -134,8 +132,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Pleuni                       | Kyra                   | Yulan          | Tamara           |
   | ---                          | ---                    | ---            | ---              |
   | Wat ipv classes gebruiken    | 3 style css bestanden  | h3 verbergen   |                  |
-  |                              |                        |                |                  |
-  |                              |                        |                |                  |
 
 
   ### Verslag van meeting
@@ -180,8 +176,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ---            | ---                       | ---                | ---              |
   | Grid area      | Opstelling van slider     | Light/dark mode    | Afwezig          |
   | @media query   | Clamp font size           | Hoe werkt Grid     |                  |
-  |                |                           |                    |                  |
-
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
