@@ -100,23 +100,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Kyra                     | Pleuni            | Yulan                      | Tamara        |
+  | ---                      | ---               | ---                        | ---           |
+  | Flex of grid gebruiken   | :nth-of-type      | H1 in het midden krijgen   | en dan ik dat |
+  |                          |                   |                            |               |
+  |                          |                   |                            |               |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik weet nu hoe ik mijn h1 in het midden krijg
+  - Gebruik maken van aria-label
+  - Font maken met @font face
 
 </details>
-
 
 
 
@@ -133,20 +131,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Pleuni                       | Kyra                   | Yulan          | Tamara           |
+  | ---                          | ---                    | ---            | ---              |
+  | Wat ipv classes gebruiken    | 3 style css bestanden  | h3 verbergen   |                  |
+  |                              |                        |                |                  |
+  |                              |                        |                |                  |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Visually hidden gebruiken om elemenen onzichtbaar maken --> mijn h3
+  - 3 css bestanden maken, 1 voor debasis style: root, fonts etc en 2 losse voor beide pagina's
 
 </details>
 
@@ -179,21 +175,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  
+  | Kyra           | Pleuni                    | Yulan              | Tamara           |
+  | ---            | ---                       | ---                | ---              |
+  | Grid area      | Opstelling van slider     | Light/dark mode    | Afwezig          |
+  | @media query   | Clamp font size           | Hoe werkt Grid     |                  |
+  |                |                           |                    |                  |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Weet nu hoe je light / dark mode toevoegt en hoe je daar buttons biij kunt maken
+  - Duidelijker hoe media query's werken
+  - Grid area in 1 regel ipv los grid-row-start grid-column-start etc. (Wel makkelijker voor mij om los uit te schrijven hihi)
 
 </details>
 
