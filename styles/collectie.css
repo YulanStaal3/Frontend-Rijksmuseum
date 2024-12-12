@@ -7,17 +7,32 @@ h1 {
     left: .3em;
     font-size: 14vw;
     text-transform: uppercase;
-    color: var(--color-text);
+    color: var(--text-basic-color);
     margin-top: 0;
     line-height: .8;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
+
+/* yolo */
+h1:hover {
+    animation-name: bounce;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+}
+
+    /* bron:
+    afterhttps://blog.hubspot.com/website/css-hover-animation */
 
 @media (width > 50em) {
     h1 {
         font-size: 9vw;
         left: 5%;;
     }
-
 }
 
 body {
@@ -37,8 +52,6 @@ section:nth-of-type(1) img {
 	height: 100%;
 	object-fit: cover;
 }
-
-
 
 
 /* 2e sectie main */
@@ -138,7 +151,7 @@ section:nth-of-type(3) a {
     position: absolute;  
     right: 2rem;          
     font-size: 1rem;   
-    color: var(--color-text);
+    color: var(--text-basic-color);
 }
 
 main section:nth-of-type(3) h2{
@@ -204,7 +217,7 @@ section:nth-of-type(4) img {
 /* 5e sectie main */
 section:nth-of-type(5) {
     height: 16em;
-    background-color: #efeae7;
+    background-color: var(--tussen-sectie-bg);
     margin-top: -3em;
     position: relative; 
 }
@@ -224,7 +237,7 @@ section:nth-of-type(5) a {
     top: 9vw;
     right: 5%;          
     font-size: 1rem;   
-    color: #000000;
+    color: var(--tussen-sectie-txt);
 }
 
 main section:nth-of-type(5) h2{
@@ -232,7 +245,7 @@ main section:nth-of-type(5) h2{
     position: absolute;  
     font-size: 2.5rem;   
     text-transform: uppercase;
-    color: #2c2926;
+    color: var(--tussen-sectie-txt);
     font-family: rijksbold;
     font-weight: 400;
     z-index: 30;
@@ -246,7 +259,7 @@ main section:nth-of-type(5) button {
     border-radius: 2px;
     font-weight: 400;
     font-size: 1rem;
-    color: var(--color-text);
+    color: var(--text-basic-color);
     z-index: 30;
     position: relative;
     top: 70%;
@@ -254,7 +267,7 @@ main section:nth-of-type(5) button {
 }
 
 main section:nth-of-type(5) button:nth-of-type(1) {
-    background-color: var(--button-background-color);
+    background-color: var(--red-button-background);
     font-weight: 500;
 }
 
@@ -263,15 +276,10 @@ main section:nth-of-type(5) button:nth-of-type(2) {
     font-weight: 200;
 }
 
-
 @media (width > 50em) {
-
-
     main section:nth-of-type(5) h2{        
         font-size: 3em;   
     }
-    
-
 }
 
 /* 6e sectie main */
@@ -284,7 +292,7 @@ main section:nth-of-type(6) article img {
 }
 
 article p, article h2, article h3 {
-    color: var(--color-text);
+    color: var(--text-basic-color);
     position: absolute; 
     bottom: 2em;  
     left: 2rem; 
@@ -465,13 +473,13 @@ main section:nth-of-type(6) article:nth-of-type(6) button {
     border-radius: 2px;
     font-size: 1em;
     border-style: none;
-    color: var(--color-text);
+    color: var(--text-basic-color);
     cursor: pointer;
 }
 
 main section:nth-of-type(6) article:nth-of-type(6) button:hover{
     transition: .5s;
-    background-color: var(--color-text);
+    background-color: var(--text-basic-color);
     color: black;
 }
 
@@ -542,7 +550,7 @@ main section:nth-of-type(6) article:nth-of-type(6) button:hover{
 /* zevende sectie */
 section:nth-of-type(7) {
     height: 13em;
-    background-color: #efeae7;
+    background-color: var(--tussen-sectie-bg);
     position: relative; 
 }
 
@@ -558,14 +566,14 @@ section:nth-of-type(7) li {
 
 section:nth-of-type(7) a {      
     font-size: 1rem;   
-    color: #000000;
+    color: var(--tussen-sectie-txt);
 }
 
 main section:nth-of-type(7) h2{
     left: 2rem;           
     position: absolute;  
     font-size: 1rem;   
-    color: #2c2926;
+    color: var(--tussen-sectie-txt);
     font-family: rijksnormal;
     font-weight: 400;
     z-index: 30;
@@ -579,7 +587,7 @@ main section:nth-of-type(7) button {
     border-radius: 2px;
     font-weight: 400;
     font-size: 1rem;
-    color: var(--color-text);
+    color: var(--text-basic-color);
     z-index: 30;
     position: relative;
     left: 2rem;  
@@ -588,7 +596,7 @@ main section:nth-of-type(7) button {
 }
 
 main section:nth-of-type(7) button:nth-of-type(1) {
-    background-color: var(--button-background-color);
+    background-color: var(--red-button-background);
 }
 
 main section:nth-of-type(7) button:nth-of-type(2),
@@ -599,7 +607,7 @@ main section:nth-of-type(7) button:nth-of-type(3)
     background-color: rgba(0, 0, 0, .25);
 }
 
-@media screen and (min-width: 50em) {
+@media  (width: 50em) {
 
     section:nth-of-type(7) {
         display: grid;
@@ -655,7 +663,6 @@ main section:nth-of-type(7) button:nth-of-type(3)
     section:nth-of-type(7) a {      
         font-size: 1.5vw;   
     }
-
 }
 
 

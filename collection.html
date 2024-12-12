@@ -15,16 +15,32 @@
 
 <body>
 
+	<fieldset>
+		<legend aria-label="Kies een thema, licht of donnker"></legend>
+		<label>
+			<input type="radio" name="kleurtjes" value="auto" checked>
+			Automatisch
+		</label>
+		<label>
+			<input type="radio" name="kleurtjes" value="light">
+			Licht
+		</label>
+		<label>
+			<input type="radio" name="kleurtjes" value="dark">
+			Donker
+		</label>
+	</fieldset>
+
 	<header>
-		<button aria-label="Open menu">
+		<button aria-label="Menu openen">
 			<span></span>
 			<span></span>
 			<span></span>
 		</button>
 
-		<img src="images-icons/search.png" alt="zoek-icon">
+		<img src="images-icons/search.png" alt="zoekicoon">
 
-		<button aria-label="Koop Rijksmuseum tickets">Rijksmuseum tickets</button>
+		<button aria-label="Koop tickets voor het Rijksmuseum">Rijksmuseum tickets</button>
 
 		<nav>
 
@@ -72,7 +88,7 @@
         <!-- eerste collectie foto -->
 		<section>
             <h1>collectie</h1>
-            <img src="images-collectie-sec-1/section 1, test 1.webp" alt="">
+            <img src="images-collectie-sec-1/section 1, test 1.webp" alt="Afbeelding kunstcollectie zwaan">
         </section>
 
         <!-- 2e groep section -->
@@ -80,27 +96,27 @@
         <article>
             <h2>ontdek</h2>
             <h3>rembrandt</h3>
-            <img src="images-collectie-sec-2/section 2, 1 collection.webp" alt="">
+            <img src="images-collectie-sec-2/section 2, 1 collection.webp" alt="Kunstwerk van Rembrandt">
         </article>
 
         <article>
             <h3>kostuums</h3>
-            <img src="images-collectie-sec-2/section 2, 2.webp" alt="">
+            <img src="images-collectie-sec-2/section 2, 2.webp" alt="Kostuum kunstwerk">
         </article>
 
         <article>
             <h3>sport</h3>
-            <img src="images-collectie-sec-2/section 2, 3.webp" alt="">
+            <img src="images-collectie-sec-2/section 2, 3.webp" alt="Schilderij sportgerelateerd">
         </article>
 
         <article>
             <h3>portretten</h3>
-            <img src="images-collectie-sec-2/section 2, 4.webp" alt="">
+            <img src="images-collectie-sec-2/section 2, 4.webp" alt="Portret van Gogh">
         </article>
 
         <article>
             <h3>spelletjes</h3>
-            <img src="images-collectie-sec-2/section 2, 5.webp" alt="">
+            <img src="images-collectie-sec-2/section 2, 5.webp" alt="Spelletjes schilderij">
         </article>
     </section>
 
@@ -109,23 +125,23 @@
         <ul>
             <li><a href="#">Ontdek</a></li>
         </ul>
-            <h2>kunstwerken</h2>
+        <h2>kunstwerken</h2>
     </section>
 
     <!-- 4e sectie in main -->
     <section>
-            <img src="images-collection-sec-4/section 4, 1.webp" alt="">
-            <img src="images-collection-sec-4/section 4, 2.webp" alt="">
-            <img src="images-collection-sec-4/section 4, 3.webp" alt="">
-            <img src="images-collection-sec-4/section 4, 4.webp" alt="">
-            <img src="images-collection-sec-4/section 4, 5.webp" alt="">
-            <img src="images-collection-sec-4/section 4, 6.webp" alt="">
-            <img src="images-collection-sec-4/section 4, 7.webp" alt="">
-            <img src="images-collection-sec-4/section 4, 8.webp" alt="">
-            <img src="images-collection-sec-4/section 4, 9.webp" alt="">
-            <img src="images-collection-sec-4/section 4, 10.webp" alt="">
-            <img src="images-collection-sec-4/section 4, 11.webp" alt="">
-            <img src="images-collection-sec-4/section 4, 12.webp" alt="">
+            <img src="images-collection-sec-4/section 4, 1.webp" alt="Schilderij melkmeisje">
+            <img src="images-collection-sec-4/section 4, 2.webp" alt="Bloemen schilderij">
+            <img src="images-collection-sec-4/section 4, 3.webp" alt="Schilderij van zwaan">
+            <img src="images-collection-sec-4/section 4, 4.webp" alt="Asperges schilderij">
+            <img src="images-collection-sec-4/section 4, 5.webp" alt="schilderij de Nachtwacht">
+            <img src="images-collection-sec-4/section 4, 6.webp" alt="Affiche delftsche slaolie">
+            <img src="images-collection-sec-4/section 4, 7.webp" alt="Delftse plaat">
+            <img src="images-collection-sec-4/section 4, 8.webp" alt="Schilderij jonge vrouw met waaier">
+            <img src="images-collection-sec-4/section 4, 9.webp" alt="Beeldje van Shiva">
+            <img src="images-collection-sec-4/section 4, 10.webp" alt="Kast meubilair">
+            <img src="images-collection-sec-4/section 4, 11.webp" alt="Japanse kimono">
+            <img src="images-collection-sec-4/section 4, 12.webp" alt="Beeldhouwwerk de dreigende liefde">
     </section>
 
     <!-- 5e sectie main -->
@@ -134,8 +150,8 @@
             <li><a href="#">Bekijk alle kunstwerken</a></li>
         </ul>
             <h2>bezoekersverhalen</h2>
-            <button>Zelf aan de slag</button>
-            <button>Alle bezoekersverhalen</button>
+            <button aria-label="Zelf aan de slag gaan">Zelf aan de slag</button>
+            <button aria-label="Voor alle bezoekersverhalen">Alle bezoekersverhalen</button>
     </section>
 
     <!-- 6e sectie main -->
@@ -143,56 +159,57 @@
         <article>
 			<h2>Eregalerij</h2>
 			<h3>25 kunstwerken | Joris Bijdendijk</h3>
-			<img src="images-collectie-sec-6/section 6, 1.jpeg" alt="">
+			<img src="images-collectie-sec-6/section 6, 1.jpeg" alt="Afbeeldingeregalerij">
         </article>
 
         <article>
 			<h2>Kragen</h2>
-			<h3><time>26 mei 2018</time> | 66 kunstwerken</h3>
+			<h3><time datetime="2018-05-26">26 mei 2018</time> | 66 kunstwerken</h3>
+			<!-- <h3><time>26 mei 2018</time> | 66 kunstwerken</h3> -->
             <p>Evelien Verkerk</p>
-			<img src="images-collectie-sec-6/section 6, 2.webp" alt="">
-			<img src="images-collectie-sec-6/section 6, 3.webp" alt="">
-			<img src="images-collectie-sec-6/section 6, 4.webp" alt="">
+			<img src="images-collectie-sec-6/section 6, 2.webp" alt="Afbeelding historische kraag">
+			<img src="images-collectie-sec-6/section 6, 3.webp" alt="Portret jonge vrouw">
+			<img src="images-collectie-sec-6/section 6, 4.webp" alt="Portret man">
         </article>
 
         <article>
 			<h2>Bloemen</h2>
-			<h3><time>13 mei 2015</time> | 27 kunstwerken</h3>
+			<h3><time datetime="2015-05-13">13 mei 2015</time> | 27 kunstwerken</h3>
             <p>Francis Blenke</p>
-			<img src="images-collectie-sec-6/section 6, 5.webp" alt="">
-			<img src="images-collectie-sec-6/section 6, 6.webp" alt="">
-			<img src="images-collectie-sec-6/section 6, 7.webp" alt="">
+			<img src="images-collectie-sec-6/section 6, 5.webp" alt="Eerste schilderij van bloemen">
+			<img src="images-collectie-sec-6/section 6, 6.webp" alt="Tweede schilderij van bloemen">
+			<img src="images-collectie-sec-6/section 6, 7.webp" alt="Derde schilderij van bloemen">
         </article>
 
         <article>
             <h2>Staalmeesters</h2>
-			<h3><time>26 november 2024</time> | 4 kunstwerken</h3>
+			<h3><time datetime="2024-11-26">26 november 2024</time> | 4 kunstwerken</h3>
             <p>Ruben van Bambost</p>
-			<img src="images-collectie-sec-6/section 6, 8.webp" alt="">
-			<img src="images-collectie-sec-6/section 6, 9.webp" alt="">
+			<img src="images-collectie-sec-6/section 6, 8.webp" alt="Schildrij van staalmeesters">
+			<img src="images-collectie-sec-6/section 6, 9.webp" alt="Staalmeesters schilderij">
         </article>
 
         <article>
             <h2>Forest</h2>
-			<h3><time>19 juni 2017</time> | 34 kunstwerken</h3>
+			<h3><time datetime="2017-06-19">19 juni 2017</time> | 34 kunstwerken</h3>
             <p>Carolien Smit</p>
-			<img src="images-collectie-sec-6/section 6, 10.webp" alt="">
-			<img src="images-collectie-sec-6/section 6, 11.webp" alt="">
-			<img src="images-collectie-sec-6/section 6, 12.webp" alt="">
+			<img src="images-collectie-sec-6/section 6, 10.webp" alt="Schilderij van een bos">
+			<img src="images-collectie-sec-6/section 6, 11.webp" alt="Natuur schilderij">
+			<img src="images-collectie-sec-6/section 6, 12.webp" alt="Schilderij van bomen in een bos">
         </article>
 
         <article>
             <button>Hang kunstwerken op</button>
-			<img src="images-collectie-sec-6/section 6, 13.webp" alt="">
+			<img src="images-collectie-sec-6/section 6, 13.webp" alt="Afbeelding eregalerij in het Rijksmuseum">
         </article>
      </section>
 
      <!-- 7e setie main  -->
      <section>
         <h2>Aan de slag met de collectie:</h2>
-        <button>Vertel je verhaal</button>
-        <button>Kunstverkenner</button>
-        <button>Ontdek de collectie</button>
+        <button aria-label="Vertel je eigen verhaal">Vertel je verhaal</button>
+        <button aria-label="Start de kunstverkenner">Kunstverkenner</button>
+        <button aria-label="Ontdek de kunstcollectie">Ontdek de collectie</button>
         <ul>
             <li> <a href="#">Over de collectie</a></li>
         </ul>

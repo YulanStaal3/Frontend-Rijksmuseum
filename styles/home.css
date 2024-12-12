@@ -7,10 +7,24 @@ width: 100%;
 left:0;
 font-size: 14vw;
 text-transform: uppercase;
-color: var(--color-text);
+color: var(--text-basic-color);
 margin-top: 0;
-line-height: .8;
+line-height: .8; 
+z-index: 100;
+/* animation-duration: 2s;
+animation-iteration-count: infinite;
+transform-origin: center; */
 }
+
+/* h1:hover {
+    animation-name: rotate;
+}
+
+@keyframes rotate {
+    0%   { transform: rotate(0deg); }
+    50%  { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+} */
 
 section {
     position: relative;
@@ -23,12 +37,12 @@ section {
 }
 
 section p, section h2, section h3 {
-    color: var(--color-text);
+    color: var(--text-basic-color);
 }
 
 section p {
-    background: var(--color-text);
-	border-radius: 1px;
+    background: var(--text-basic-color);
+	border-radius: .16em;
     color: #000000;
     font-size: .75rem;
 	font-weight: 600;

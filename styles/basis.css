@@ -24,13 +24,75 @@
 	src: url("../fonts/Rijksmuseum-Normal.woff2");
 }
 
-:root {
-	/* startje */
-	--color-text: #FFFFFF;
-	--button-background-color: #d55140;
-	--nav-background-color: #40474F;
+/* dark/light mode */
+/* :root{
+    color-scheme:light dark;
+    --background-color-menu: light-dark (#40474F, #151544);
+    --text-basic-color: light-dark (#FFFFFF, #656579);
+    --footer-background-color: light-dark (#000000, #484848);
+    --red-button-background: light-dark (#d55140, #6e1003);
+    --red-button-text: light-dark (#FFFFFF, #e0e0e0);
+    --nav-background-color: light-dark (#40474F, #FFFFFF);
+    --menu-text-color: light-dark (#c2ccce, #000000);
+    --footer-button: light-dark (#ffffff2c, #4a4a4a17);
+    --tussen-sectie-bg: light-dark (#efeae7, #2c2b2b);
+    --tussen-sectie-txt: light-dark (#000000, #919191);
+    --dl-bg: light-dark (#fdb3e8, #c75fa9);
+} */
+
+:root:has([value="auto"]:checked),
+:root:has([value="light"]:checked) {
+	color-scheme:light;
+    --background-color-menu: #40474F;
+    --text-basic-color: #FFFFFF;
+    --footer-background-color: #000000;
+    --red-button-background: #d55140;
+    --red-button-text: #FFFFFF;
+    --nav-background-color: #40474F;
     --menu-text-color: #c2ccce;
+    --footer-button: #ffffff2c;
+    --tussen-sectie-bg: #efeae7;
+    --tussen-sectie-txt: #000000;
+    --dl-bg: #fdb3e8;
 }
+
+:root:has([value="dark"]:checked) {
+	color-scheme:dark;
+    --background-color-menu: #000000;
+    --text-basic-color: #656579;
+    --footer-background-color: #484848;
+    --red-button-background: #6e1003;
+    --red-button-text: #e0e0e0;
+    --nav-background-color: #FFFFFF;
+    --menu-text-color: #000000;
+    --footer-button: #1a1a1a;
+    --tussen-sectie-bg: #2c2b2b;
+    --tussen-sectie-txt: #919191;
+    --dl-bg: #c75fa9;
+}
+
+button {
+    cursor: pointer;
+}
+
+fieldset {
+    position: fixed;
+    bottom: 1.25em;
+    right: 1.25em;
+    padding: .5em;
+    background-color: var(--dl-bg);
+    border-radius: .2em;
+    border-style: none;
+    z-index: 9999;
+}
+
+fieldset label {
+    display: block;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1em;
+}
+
 
 html.open {
     overflow:hidden;
@@ -39,50 +101,23 @@ html.open {
 body {
 	font-family: rijksnormal;
 	margin: 0;
-    background-color: var(--nav-background-color);
+    background-color: var(--background-color-menu);
 }
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr auto auto;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 1rem; 
     position: absolute;
     top: 2.5%; 
     left: 5%;
-
     right: 5%;
 }
 
 header img {
 	width: 1.3em;
     z-index: 30;
-}
-
-/* header > ul:nth-of-type(1) li a{
-    display: flex; 
-    gap: 1rem; 
-    list-style: none; 
-    margin: 0;
-    padding: 0;
-    align-items: center; 
-} */
-
-header > ul:nth-of-type(1) li a {
-    color: red; 
-    text-decoration: none; 
-    font-size: 0.9rem; 
-    font-weight: 600; 
-    display: flex; 
-    gap: 1rem; 
-    list-style: none; 
-    margin: 0;
-    padding: 0;
-    align-items: center; 
-}
-
-header > ul:nth-of-type(2) li a:hover {
-    text-decoration: underline; 
 }
 
 /* image openen menu rechterkant */
@@ -96,7 +131,8 @@ header section:nth-of-type(1) img {
     z-index: 5; 
     visibility: hidden; 
     opacity: 0; 
-    object-position: center 1%; 
+    object-position: center 1%;  
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out; 
 }
 
 header section p,
@@ -123,36 +159,35 @@ header section h3 {
 nav ul {
 	list-style: none; 
     padding-left: 0;
+    top: 20em;
 }
   
 nav ul:first-of-type {
 	display: flex; 
 	justify-content: flex-start; 
-	margin-top: 5em;
-    color: var(--color-text);
+    gap: 2em;
+    padding-top: 2.2rem;
 }
 
 nav ul:first-of-type li:not(:last-child)::after {
     content: '|';
-    color: var(--color-text);
+    margin-left: 2em;
+    color: var(--text-basic-color);
 }
-  
+
 nav ul li {
     min-height: 2.75em;
 }
 
-  
-nav ul li a:hover {
-    transition: 
-        transform .2s ease-out, 
-        opacity 0ms linear .2s;
+nav ul:first-of-type a {
+    font-size: 1em;
 }
 
-nav h3 {
-    min-height: 2.75em;
-    color: var(--color-text);
-    padding-left: 0;
+  
+nav ul li a:hover {
+ font-weight: 800;
 }
+
 
 @media (width > 50em) {
 
@@ -161,10 +196,7 @@ nav h3 {
         grid-column-start:1;
         grid-row-start: 1;
         grid-column-end:3;
-
         align-self: end;
-
-        margin:0;
     }
 
     nav ul li a {
@@ -206,7 +238,7 @@ nav h3 {
         text-transform: uppercase;
         font-weight: 200;
 
-        color: var(--color-text);
+        color: var(--text-basic-color);
         
         margin:0;
     }
@@ -243,7 +275,7 @@ header button:nth-of-type(1) span {
 	display: block;
 	width: 2em;
 	height: 0.2em;
-	background-color: var(--color-text);
+	background-color: var(--text-basic-color);
 	border-radius: 0.2em;
 	transition: all 0.3s ease-in-out;
 }
@@ -256,17 +288,22 @@ header nav {
 	left: -100%;
 	width: 100%;
 	height: 100%;
-	background-color: var(--nav-background-color);
+	background-color: var(--background-color-menu);
 	padding: 2em;
 
 	/* KIJKEN */
-	transition: transform .2s ease-out, opacity 0ms linear .2s;
-	z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out, visibility 0s 0.5s; 
+    z-index: 10;
 }
   
   /* Menu uitklapppen zichtbaar */
 header nav.toonMenu {
 	left: 0;
+    opacity: 1; 
+    visibility: visible; 
+    transition: opacity 0.5s ease-out, visibility 0s 0s;
 }
   
 /* Hamburger wordt kruisje */
@@ -286,9 +323,9 @@ header button:nth-of-type(1).open span:nth-of-type(3) {
 header button:nth-of-type(2) {
     position: relative;
     align-items: center;
-    background-color: var(--button-background-color);
+    background-color: var(--red-button-background);
     border-radius: 2px;
-    color: var(--color-text);
+    color: var(--red-button-text);
     border: none;
     font-size: .9em;
     font-weight: 600;
@@ -299,12 +336,12 @@ header button:nth-of-type(2) {
 
 /* Hover-effect voor de tweede button */
 header button:nth-of-type(2):hover {
-    background-color: var(--color-text);
+    background-color: var(--text-basic-color);
     color: var(--nav-background-color);
 }
 
 header a {
-	color: var(--color-text);
+	color: var(--text-basic-color);
 	text-decoration: none;
 }
 
@@ -342,9 +379,8 @@ header a {
     }
 }
 
-
 section p, section h2, section h3 {
-    color: var(--color-text);
+    color: var(--text-basic-color);
 }
 
 /* footer */
@@ -354,8 +390,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-    background-color: #000; 
-    color: #fff; 
+    background-color: var(--footer-background-color); 
+    color: var(--text-basic-color); 
     padding: 2rem; 
     gap: 1rem; 
 }
@@ -368,6 +404,7 @@ footer h2 {
     margin: 0;
     padding-top: 2em;
     padding-left: 0;
+    color: var(--menu-text-color);
 }
 
 footer p {
@@ -401,7 +438,7 @@ footer ul:first-of-type li a:hover {
 
 /* buttons */
 footer button {
-    background-color: #ffffff2c;
+    background-color: var(--footer-button);
     color: #fff;
     border: none;
     font-size: 1rem;
@@ -413,8 +450,8 @@ footer button {
 }
 
 footer button:hover {
-    background-color: #fff;
-    color: #000000;
+    background-color: var(--text-basic-color);
+    color: var(--tussen-sectie-txt);
 }
 
 /* logos */
@@ -502,6 +539,7 @@ footer ul:last-of-type li a:hover {
 
     footer ul:nth-of-type(1) li a{
         font-size: 1.2rem;
+
     }
 
    footer button:nth-of-type(1) {
