@@ -164,6 +164,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Het is me niet gelukt om video toe te voegen
   - Nog niet alle media query's staan erin
 
+  <img src="readme-images/PDF-document-2.png" width="375px" alt="breakdown van collectie pagina">
+
 Na het afronden van mijn site:
 
 - Elke button heeft een aria-label en staat in een button element
