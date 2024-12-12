@@ -58,7 +58,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Ik ben door de Rijksmuseum site gegaan en heb de screenreader hierop getest. Ik heb verschillende dingen getest. Zo heb ik gekeken wat er zou gebeuren als ik de voice over gewoon     zou laten voorlezen, ook heb ik geprobeerd om met mijn toetsenbord te navigeren en ook met behulp van mijn muis. Ik ben tot de volgende bevindingen gekomen:
 
-  - Soms slechte alt teksten biij images
+  - Soms slechte of zelfs geen alt teksten biij images
   - Voiceover herhaalt vaak dingen
   - Met de tab kun je door de website navigeren, dit werkt niet overal even goed.
   - Goede hieracrhie van h1, h2 etc..
@@ -163,6 +163,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Aria-labels voor buttons etc moet ik nog toevoegen
   - Het is me niet gelukt om video toe te voegen
   - Nog niet alle media query's staan erin
+
+Na het afronden van mijn site:
+
+- Elke button heeft een aria-label en staat in een button element
+- Alle images een goed en duidelijk alt tekst gegeven
+- Media query's gefixt waardoor je mijn site op elke scherm grootte kunt bekijken
+- Light/ dark mode gemaakt
+- Goed gebruikt gemaakt van customc properties
 
 
 
