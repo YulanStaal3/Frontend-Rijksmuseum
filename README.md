@@ -43,8 +43,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/Rijks-Home.PNG" width="375px" alt="Home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Ontdek Nachtwacht pagina
-  <img src="readme-images/Rijks-ontdek.PNG" width="375px" alt="collectie pagina">
+  Collectie pagina
+  <img src="readme-images/collectie.PNG" width="375px" alt="collectie pagina">
  
 </details>
 
@@ -194,19 +194,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/sfeer.jpeg" width="375px" alt="Grid sfeer plaatje">
+  <img src="readme-images/grid.PNG" width="375px" alt="Grid sfeer plaatje">
+  <img src="readme-images/home.jpeg width="375px" alt="Grid sfeer plaatje">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb over het algemeen enorm veel nieuwe kennis over CSS opgedaan, zo begrijp ik onder andere hoe je gebruik van een grid kunt maken en het werken met media query's. Ik was dit gehele vak erg onzeker en heb erg aan mezelf getwijfeld. Ik wist niet zeker of het me zou lukken om 2 pagina's te kunnen maken. Maar ik ben trots dat mijn beide pagina's staan en ook responsive goed werken. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/moeilijk.PNG" width="375px" alt="Grid sfeer plaatje">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Over het algemeen vond ik bijna alles wel lastig, ik had het meeste moeite met mijn hamburger menu. Helaas is het me ook niet gelukt om deze volledig na te kunnen maken. Op klein scherm klopt hij, maar zodra het scherm groter wordt hoort een deel van de tekst die in het menu staat, naar de nav bar te verplaatsen. Dit is me helaas niet gelukt. Ook vond ik het maken van één bepaalde sectie in mijn collectie pagina extreem lastig, dit gaat over de 6e sectie in mijn main met meerdere artikelen. Ik had een idee van hoe ik dit moest doen, maar puntje bij paaltje heb ik hier meerdere dagen op vast gelopen. Gelukkig is het uiteindelijk goed gekomen en heb ik het nog kunnen fixen!
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/menu.jpeg" width="375px" alt="menu bijna volledig">
 </details>
 
 
@@ -222,8 +224,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Buttons https://www.codecenter.nl/pr/tutorial/css/css3_buttons#:~:text=CSS%20buttons%20groeperen&text=Verwijder%20de%20marges%20door%20aan,plaats%20je%20deze%20naast%20elkaar.
+  2. Flexbox https://codepen.io/YulanS/pen/XWvwbJQ?editors=1100
+  3. Grid https://www.w3schools.com/cssref/pr_grid-area.php
+  4. Hamburgermenu https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+  5. Grid https://codepen.io/YulanS/pen/bGXZOOL?editors=1100
+  6. Grid https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-column-start
+  7. Font face https://www.w3schools.com/cssref/atrule_font-face.php
+  8. Font size https://www.geeksforgeeks.org/css-units-em-rem-px-vh-vw/
+  9. Flexbox https://codepen.io/shooft/pen/xxozyVW?editors=1100
+  10. Grid https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
+  11. Light/dark mode https://codepen.io/shooft/pen/xxozyVW?editors=1100
+  12. Light/dark modehttps://dlo.mijnhva.nl/content/enforced/609316-FDMCI-2000FED121-DMCI-CMD-2425-1/FED%2024-25%20-%20Blok%202%20-%20Intro%20themes%20met%20has%20en%20lightdark.pdf
 
 </details>
