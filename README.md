@@ -164,7 +164,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Het is me niet gelukt om video toe te voegen
   - Nog niet alle media query's staan erin
 
-  <img src="readme-images/PDF-document-2.png" width="375px" alt="WCAG checklist">
+  <img src="readme-images/PDF-document-2.jpeg" width="375px" alt="WCAG checklist">
+  <img src="readme-images/PDF-document-2-2.jpeg" width="375px" alt="WCAG checklist">
 
 Na het afronden van mijn site:
 
