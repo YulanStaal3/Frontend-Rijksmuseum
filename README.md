@@ -196,7 +196,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/sfeer.jpeg" width="375px" alt="Grid sfeer plaatje">
   <img src="readme-images/grid.PNG" width="375px" alt="Grid sfeer plaatje">
-  <img src="readme-images/home.jpeg width="375px" alt="Grid sfeer plaatje">
+  <img src="readme-images/home.jpeg" width="375px" alt="Grid sfeer plaatje">
 
 
   ### Dit ging goed/Heb ik geleerd: 
