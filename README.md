@@ -43,8 +43,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/Rijks-Home.PNG" width="375px" alt="Home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Ontdek Nachtwacht pagina
-  <img src="readme-images/Rijks-ontdek.PNG" width="375px" alt="collectie pagina">
+  Collectie pagina
+  <img src="readme-images/collectie.PNG" width="375px" alt="collectie pagina">
  
 </details>
 
@@ -58,10 +58,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Ik ben door de Rijksmuseum site gegaan en heb de screenreader hierop getest. Ik heb verschillende dingen getest. Zo heb ik gekeken wat er zou gebeuren als ik de voice over gewoon     zou laten voorlezen, ook heb ik geprobeerd om met mijn toetsenbord te navigeren en ook met behulp van mijn muis. Ik ben tot de volgende bevindingen gekomen:
 
-  - Je kunt door de site heen scrollen door gebruik te maken van de spatie knop.
+  - Soms slechte of zelfs geen alt teksten biij images
+  - Voiceover herhaalt vaak dingen
   - Met de tab kun je door de website navigeren, dit werkt niet overal even goed.
   - Goede hieracrhie van h1, h2 etc..
-  - Niet overal gebruik gemaakt van goede alt teksten bij images.
 
 </details>
 
@@ -72,6 +72,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   ### de hele pagina: 
   <img src="readme-images/fed-breakdown-home-1.jpeg" width="375px" alt="breakdown van de hele pagina">
@@ -84,15 +85,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/Frontend-breakdownschetsen-02.png" width="375px" alt="breakdown van nog een dynamisch deel">
 =======
   ### de hele Home pagina: 
+=======
+  ### de hele pagina: 
+  <img src="readme-images/fed-breakdown-home-1.jpeg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/fed-breeakdown-home-2.jpeg" width="375px" alt="breakdown van de hele pagina">
+>>>>>>> a104fffd8c16120e1f8d20b4558080d683cf1df1
 
-
-
-  ### Uitgeklapte menu: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### menu opengeklapt: 
+  <img src="readme-images/Frontend-breakdownschetsen-03.png" width="375px" alt="breakdown van opengklapt menu">
 
   ### Collectie pagina: 
+<<<<<<< HEAD
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 >>>>>>> 7413cf000cc555aa5280299251e077fc6ce8de1d
+=======
+  <img src="readme-images/Frontend-breakdownschetsen-02.png" width="375px" alt="breakdown van collectie pagina">
+>>>>>>> a104fffd8c16120e1f8d20b4558080d683cf1df1
 
 </details>
 
@@ -104,7 +112,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Mijn h1 vergroot niet mee en blijft niet in het midden staan, ook snapik het menu niet. 
 
 
   ### Agenda voor meeting
@@ -133,7 +141,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Snap niet hoe :nth of type werkt. En waarom er een h3 moet staan terwijl je die niet ziet.
 
 
   ### Agenda voor meeting
@@ -147,6 +155,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
+  - Ik snap nu hoe je :nth-of-type gebruikt 
   - Visually hidden gebruiken om elemenen onzichtbaar maken --> mijn h3
   - 3 css bestanden maken, 1 voor debasis style: root, fonts etc en 2 losse voor beide pagina's
 
@@ -162,7 +171,32 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  Ik heb deze test in week 4 gedaan. Ik ben nog niet klaar met mijn website. Mijn belangrijkste bevindingen voor nu, staan hieronder. Ik zal onder de bevingen foto's plaatsen van de WCAG checklist, als mijn site helemaal af is.
+  
+  - Verbeterde alt teksten bij de images.
+  - Nog niet elke image heeft een ingevulde alt tekst
+  - Screenreader leest alles op de goede volgorde voor
+  - Goede hierarchie met h1, h2 etc
+  - Snap alleen nog niet helemaal hoe je door de site 'tabt'
+  - Ik heb nog geen light/ dark mode
+  - Aria-labels voor buttons etc moet ik nog toevoegen
+  - Het is me niet gelukt om video toe te voegen
+  - Nog niet alle media query's staan erin
+
+  <img src="readme-images/PDF-document-2.jpeg" width="375px" alt="WCAG checklist">
+  <img src="readme-images/PDF-document-2-2.jpeg" width="375px" alt="WCAG checklist">
+
+Na het afronden van mijn site:
+
+- Elke button heeft een aria-label en staat in een button element
+- Alle images een goed en duidelijk alt tekst gegeven
+- Media query's gefixt waardoor je mijn site op elke scherm grootte kunt bekijken
+- Light/ dark mode gemaakt
+- Goed gebruikt gemaakt van customc properties
+
+
+
 
 </details>
 
@@ -176,7 +210,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Extra uitleg voor grid nodig, ook voor media query wil ik veel met grid gaan werken voor onder andere mijn afbeeldingen. Ook heb ik behoefte aan extra uitleg voor de light/ dark mmode (mocht ik hier uberhaupt nog aan toekomen).
 
 
   ### Agenda voor meeting
@@ -206,19 +240,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/sfeer.jpeg" width="375px" alt="Grid sfeer plaatje">
+  <img src="readme-images/grid.PNG" width="375px" alt="Grid sfeer plaatje">
+  <img src="readme-images/home.jpeg" width="375px" alt="Grid sfeer plaatje">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb over het algemeen enorm veel nieuwe kennis over CSS opgedaan, zo begrijp ik onder andere hoe je gebruik van een grid kunt maken en het werken met media query's. Ik was dit gehele vak erg onzeker en heb erg aan mezelf getwijfeld. Ik wist niet zeker of het me zou lukken om 2 pagina's te kunnen maken. Maar ik ben trots dat mijn beide pagina's staan en ook responsive goed werken. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/moeilijk.PNG" width="375px" alt="Grid sfeer plaatje">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Over het algemeen vond ik bijna alles wel lastig, ik had het meeste moeite met mijn hamburger menu. Helaas is het me ook niet gelukt om deze volledig na te kunnen maken. Op klein scherm klopt hij, maar zodra het scherm groter wordt hoort een deel van de tekst die in het menu staat, naar de nav bar te verplaatsen. Dit is me helaas niet gelukt. Ook vond ik het maken van één bepaalde sectie in mijn collectie pagina extreem lastig, dit gaat over de 6e sectie in mijn main met meerdere artikelen. Ik had een idee van hoe ik dit moest doen, maar puntje bij paaltje heb ik hier meerdere dagen op vast gelopen. Gelukkig is het uiteindelijk goed gekomen en heb ik het nog kunnen fixen!
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/menu.jpeg" width="375px" alt="menu bijna volledig">
 </details>
 
 
@@ -234,8 +270,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Buttons https://www.codecenter.nl/pr/tutorial/css/css3_buttons#:~:text=CSS%20buttons%20groeperen&text=Verwijder%20de%20marges%20door%20aan,plaats%20je%20deze%20naast%20elkaar.
+  2. Flexbox https://codepen.io/YulanS/pen/XWvwbJQ?editors=1100
+  3. Grid https://www.w3schools.com/cssref/pr_grid-area.php
+  4. Hamburgermenu https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+  5. Grid https://codepen.io/YulanS/pen/bGXZOOL?editors=1100
+  6. Grid https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-column-start
+  7. Font face https://www.w3schools.com/cssref/atrule_font-face.php
+  8. Font size https://www.geeksforgeeks.org/css-units-em-rem-px-vh-vw/
+  9. Flexbox https://codepen.io/shooft/pen/xxozyVW?editors=1100
+  10. Grid https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
+  11. Light/dark mode https://codepen.io/shooft/pen/xxozyVW?editors=1100
+  12. Toegankelijkheid https://www.a11yproject.com/posts/reviewing-a-design-for-accessibility/
+  13. Toegankelijkheid https://www.a11yproject.com
+  14. Light/dark mode https://dlo.mijnhva.nl/content/enforced/609316-FDMCI-2000FED121-DMCI-CMD-2425-1/FED%2024-25%20-%20Blok%202%20-%20Intro%20themes%20met%20has%20en%20lightdark.pdf
 
 </details>
