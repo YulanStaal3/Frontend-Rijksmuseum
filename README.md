@@ -58,10 +58,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Ik ben door de Rijksmuseum site gegaan en heb de screenreader hierop getest. Ik heb verschillende dingen getest. Zo heb ik gekeken wat er zou gebeuren als ik de voice over gewoon     zou laten voorlezen, ook heb ik geprobeerd om met mijn toetsenbord te navigeren en ook met behulp van mijn muis. Ik ben tot de volgende bevindingen gekomen:
 
-  - Je kunt door de site heen scrollen door gebruik te maken van de spatie knop.
+  - Soms slechte alt teksten biij images
+  - Voiceover herhaalt vaak dingen
   - Met de tab kun je door de website navigeren, dit werkt niet overal even goed.
   - Goede hieracrhie van h1, h2 etc..
-  - Niet overal gebruik gemaakt van goede alt teksten bij images.
 
 </details>
 
@@ -92,7 +92,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Mijn h1 vergroot niet mee en blijft niet in het midden staan, ook snapik het menu niet. 
 
 
   ### Agenda voor meeting
@@ -121,7 +121,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Snap niet hoe :nth of type werkt. En waarom er een h3 moet staan terwijl je die niet ziet.
 
 
   ### Agenda voor meeting
@@ -135,6 +135,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
+  - Ik snap nu hoe je :nth-of-type gebruikt 
   - Visually hidden gebruiken om elemenen onzichtbaar maken --> mijn h3
   - 3 css bestanden maken, 1 voor debasis style: root, fonts etc en 2 losse voor beide pagina's
 
@@ -150,7 +151,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  Ik heb deze test in week 4 gedaan. Ik ben nog niet klaar met mijn website. Mijn belangrijkste bevindingen voor nu, staan hieronder. Ik zal onder de bevingen foto's plaatsen van de WCAG checklist, als mijn site helemaal af is.
+  
+  - Verbeterde alt teksten bij de images.
+  - Nog niet elke image heeft een ingevulde alt tekst
+  - Screenreader leest alles op de goede volgorde voor
+  - Goede hierarchie met h1, h2 etc
+  - Snap alleen nog niet helemaal hoe je door de site 'tabt'
+  - Ik heb nog geen light/ dark mode
+  - Aria-labels voor buttons etc moet ik nog toevoegen
+  - Het is me niet gelukt om video toe te voegen
+  - Nog niet alle media query's staan erin
+
+
+
 
 </details>
 
@@ -164,7 +179,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Extra uitleg voor grid nodig, ook voor media query wil ik veel met grid gaan werken voor onder andere mijn afbeeldingen. Ook heb ik behoefte aan extra uitleg voor de light/ dark mmode (mocht ik hier uberhaupt nog aan toekomen).
 
 
   ### Agenda voor meeting
@@ -235,6 +250,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   9. Flexbox https://codepen.io/shooft/pen/xxozyVW?editors=1100
   10. Grid https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
   11. Light/dark mode https://codepen.io/shooft/pen/xxozyVW?editors=1100
-  12. Light/dark modehttps://dlo.mijnhva.nl/content/enforced/609316-FDMCI-2000FED121-DMCI-CMD-2425-1/FED%2024-25%20-%20Blok%202%20-%20Intro%20themes%20met%20has%20en%20lightdark.pdf
+  12. Toegankelijkheid https://www.a11yproject.com/posts/reviewing-a-design-for-accessibility/
+  13. Toegankelijkheid https://www.a11yproject.com
+  14. Light/dark mode https://dlo.mijnhva.nl/content/enforced/609316-FDMCI-2000FED121-DMCI-CMD-2425-1/FED%2024-25%20-%20Blok%202%20-%20Intro%20themes%20met%20has%20en%20lightdark.pdf
 
 </details>
